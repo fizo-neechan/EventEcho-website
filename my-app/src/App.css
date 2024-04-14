@@ -1,4 +1,87 @@
-.App {
+/* TODO: Update design system (font style, colors, and font sizes). */
+:root {
+  /* Color */
+  --color-black: #000000;
+  --color-dark-blue: #16167B;
+  --color-medium-blue: #0001C7;
+  --color-blue: #1F1EF5;
+  --color-light-blue: #DAE7F8;
+  --color-white: #FFFFFF;
+  --color-grey: #99958b;
+  --color-opaque-grey: #99958b31;
+
+  /* Font size */
+  /* --font-xlarge: 80px;
+  --font-large: 60px;
+  --font-medium: 36px;
+  --font-normal: 24px;
+  --font-small: 12px; */
+
+  /* Font weight */
+  --weight-extra-bold: 600;
+  /* --weight-bold: 500; */
+  /* --weight-normal: 400; */
+  /* --weight-thin: 300; */
+  /* --weight-extra-thin: 200; */
+}
+
+@import url('https://fonts.cdnfonts.com/css/work-sans');
+
+/* Navbar */
+.navbar {
+  padding: 0.5em;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-black);
+  position: sticky;
+  z-index: 2;
+  /* box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 12%); */
+}
+
+/* NavLinks to Home & About */
+.navbarMenu {
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2em;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.navbarItem {
+  background-color: var(--color-opaque-grey);
+  /* border: solid; */
+  /* border-color: var(--color-opaque-grey); */
+  border-radius: 5px;
+  padding: 7px;
+
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: var(--weight-extra-bold);
+  font-size: 1.2rem;
+}
+
+.navbarItem:hover {
+  color: var(--color-grey);
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+/* Logo */
+.logoWrapper {
+  flex-grow: 2;
+  margin: 0 2em;
+}
+  
+.logo {
+  height: 40px;
+}
+
+/* The below came with creating a React app. */
+/* .App {
   text-align: center;
 }
 
@@ -35,53 +118,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-/* Navbar */
-.navbar {
-  padding: 0.5em;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: black;
-  position: sticky;
-  z-index: 2;
-  /* box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 12%); */
-}
-
-/* NavLinks to Home & About */
-.navbarMenu {
-  height: 100%;
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 2em;
-  /* font-family: "LoveloBlack"; */
-}
-
-/* TODO: Update design system (font style, colors, and font sizes). */
-.navbarItem {
-  color: white;
-  text-decoration: none;
-  /* font-weight: var(--weight-bold); */
-  font-size: 1.2rem;
-  /* font-family: "LoveloBlack"; */
-}
-
-.navbarItem:hover {
-  color: grey;
-  transition: 0.3s ease-out;
-  cursor: pointer;
-}
-
-/* Logo */
-.logoWrapper {
-  flex-grow: 2;
-  margin: 0 2em;
-}
-  
-.logo {
-  height: 40px;
-}
+} */

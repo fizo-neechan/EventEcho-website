@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -14,8 +13,8 @@ function App() {
       </div>
       
       <div className="navbarMenu">
-        <NavLink to="/" className="navbarItem"> Home </NavLink>
-        <NavLink to="/about" className="navbarItem"> About </NavLink>
+        <NavLink to="/" className="navbarItem"> HOME </NavLink>
+        <NavLink to="/about" className="navbarItem"> ABOUT </NavLink>
       </div>
     </nav>
 
