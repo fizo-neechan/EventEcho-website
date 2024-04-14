@@ -6,9 +6,10 @@
   --color-medium-blue: #0001C7;
   --color-blue: #1F1EF5;
   --color-light-blue: #DAE7F8;
+
   --color-white: #FFFFFF;
   --color-grey: #99958b;
-  --color-opaque-grey: #99958b31;
+  --color-opaque-grey: #1A1A1A;
 
   /* Font size */
   /* --font-xlarge: 80px;
@@ -23,6 +24,7 @@
   /* --weight-normal: 400; */
   /* --weight-thin: 300; */
   /* --weight-extra-thin: 200; */
+
 }
 
 @import url('https://fonts.cdnfonts.com/css/work-sans');
@@ -78,6 +80,28 @@
   
 .logo {
   height: 40px;
+}
+
+.externalLinkWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: var(--color-light-blue);
+  border: solid;
+  border-color: var(--color-light-blue);
+  border-radius: 50px;
+  width: 100px;
+  margin: 2em;
+  position: fixed;
+  bottom: 0;
+}
+
+.externalLinkItems{
+  height: 30px;
+  width: 30px;
+  padding: 5px;
 }
 
 /* The below came with creating a React app. */
