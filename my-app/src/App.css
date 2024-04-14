@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+
+/* Navbar */
+.navbar {
+  padding: 0.5em;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  position: sticky;
+  z-index: 2;
+  /* box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 12%); */
+}
+
+/* NavLinks to Home & About */
+.navbarMenu {
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2em;
+  /* font-family: "LoveloBlack"; */
+}
+
+/* TODO: Update design system (font style, colors, and font sizes). */
+.navbarItem {
+  color: white;
+  text-decoration: none;
+  /* font-weight: var(--weight-bold); */
+  font-size: 1.2rem;
+  /* font-family: "LoveloBlack"; */
+}
+
+.navbarItem:hover {
+  color: grey;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+/* Logo */
+.logoWrapper {
+  flex-grow: 2;
+  margin: 0 2em;
+}
+  
+.logo {
+  height: 40px;
+}
