@@ -6,14 +6,18 @@ import back2 from '../images/home_back2.png'
 function Home() {
   return (
     <div className="home">
-        <img src={back1} alt=""/>
-        <img src={back2} alt=""/> 
-        <p className="text">
-            A CENTRALIZED PLATFORM<br/>
-            TO FIND CONCERT COMPANIONS<br/>
-            & BUYING/SELLING<br/>
-            TICKETS FOR UCLA STUDENTS<br/>
-        </p>
+        <div>
+            <img src={back1} alt=""/>
+            <img src={back2} alt=""/>
+        </div> 
+        <div>
+            <p className="text">
+                A CENTRALIZED PLATFORM<br/>
+                TO FIND CONCERT COMPANIONS<br/>
+                & BUYING/SELLING<br/>
+                TICKETS FOR UCLA STUDENTS<br/>
+            </p>
+        </div>
     </div>
   );
 }

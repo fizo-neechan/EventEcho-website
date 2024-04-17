@@ -1,12 +1,11 @@
 import '../App.css';
 import './About.css';
 import about_back1 from '../images/about_back1.png'
-//import about_back2 from '../images/about_back2.png'
 
 function About() {
   return (
     <div className="about">
-        <img src={about_back1} alt=""/>
+        <img src={about_back1} alt="" class="style1"/>
         <p className="text">
         ARE YOU LOOKING FOR CONCERT BUDDIES?<br/>
         <br/>
