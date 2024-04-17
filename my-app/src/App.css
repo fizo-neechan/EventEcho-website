@@ -12,11 +12,11 @@
   --color-opaque-grey: #1A1A1A;
 
   /* Font size */
-  /* --font-xlarge: 80px;
+  --font-xlarge: 80px;
   --font-large: 60px;
   --font-medium: 36px;
   --font-normal: 24px;
-  --font-small: 12px; */
+  --font-small: 12px;
 
   /* Font weight */
   --weight-extra-bold: 600;
@@ -38,7 +38,7 @@
   justify-content: space-between;
   background-color: var(--color-black);
   position: sticky;
-  z-index: 2;
+  z-index: 3;
   /* box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 12%); */
 }
 
@@ -96,6 +96,7 @@
   margin: 2em;
   position: fixed;
   bottom: 0;
+  z-index: 3;
 }
 
 .externalLinkItems{

@@ -1,3 +1,33 @@
-.Home {
+@import url('https://fonts.cdnfonts.com/css/work-sans');
 
-}
+.home {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    height: calc(100vh - 76px);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    height: 95%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .home .text {
+    font-size: var(--font-medium);
+    text-align: left;
+    padding: 20px;
+    margin-left: 950px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: var(--weight-extra-bold);
+    z-index: 2;
+  }
+  
+  

@@ -1,0 +1,28 @@
+.about {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    height: calc(100vh - 60px);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about img{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about .text {
+    font-size: var(--font-normal);
+    text-align: left;
+    padding: 20px;
+    margin-left: -900px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: var(--weight-extra-bold);
+    z-index: 2;
+  }
