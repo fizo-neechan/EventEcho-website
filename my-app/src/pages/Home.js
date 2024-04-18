@@ -16,7 +16,7 @@ function Home() {
             {/*<img src={phone_back2} className="smallscreen-img" alt=""/>*/}
         </div> 
         <div>
-            <img src={eventecho} className="" alt=""/>
+            <img src={eventecho} className="tagline" alt=""/>
             <p className="text">
                 A CENTRALIZED PLATFORM<br/>
                 TO FIND CONCERT COMPANIONS<br/>
