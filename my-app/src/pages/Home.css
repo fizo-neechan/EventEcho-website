@@ -9,7 +9,7 @@
     align-items: center;
   }
 
-  .home img {
+  .home .fullscreen-img {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -17,6 +17,10 @@
     height: 90%;
     object-fit: cover;
     z-index: 1;
+  }
+
+  .home .smallscreen-img {
+    display: none;
   }
   
   .home .text {
@@ -29,14 +33,22 @@
     z-index: 2;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 576px) {
     /* Styles for screens smaller than 600px (e.g., phones) */
     .home {
       grid-template-columns: 1fr;
     }
   
-    .home img {
-      display: none; /* Hide the images on smaller screens */
+    .home .fullscreen-img {
+      display: none;
+    }
+  
+    .home .smallscreen-img {
+      display:block;
+      position: relative;
+      width: 100%;
+      object-fit: cover;
+      z-index: 1;
     }
   
     .home .text {
