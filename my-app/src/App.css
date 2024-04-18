@@ -47,7 +47,7 @@
   height: 100%;
   display: flex;
   flex-grow: 1;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin: 0 2em;
   font-family: 'Work Sans', sans-serif;
@@ -59,6 +59,7 @@
   /* border-color: var(--color-opaque-grey); */
   border-radius: 5px;
   padding: 7px;
+  margin: 3%;
 
   color: var(--color-white);
   text-decoration: none;
