@@ -22,6 +22,10 @@
   .home .smallscreen-img {
     display: none;
   }
+
+  .home .tagline {
+    display:none;
+  }
   
   .home .text {
     font-size: var(--font-medium);
@@ -50,10 +54,15 @@
       object-fit: cover;
       z-index: 1;
     }
+
+    .home .tagline {
+      display:block;
+    }
   
     .home .text {
+      font-size: var(--font-normal);
       margin-left: 0; /* Reset the margin for text on smaller screens */
-      text-align: center; /* Center the text on smaller screens */
+      text-align: left; /* Center the text on smaller screens */
     }
   }
   
