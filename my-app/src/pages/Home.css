@@ -28,5 +28,21 @@
     font-weight: var(--weight-extra-bold);
     z-index: 2;
   }
+
+  @media only screen and (max-width: 600px) {
+    /* Styles for screens smaller than 600px (e.g., phones) */
+    .home {
+      grid-template-columns: 1fr;
+    }
+  
+    .home img {
+      display: none; /* Hide the images on smaller screens */
+    }
+  
+    .home .text {
+      margin-left: 0; /* Reset the margin for text on smaller screens */
+      text-align: center; /* Center the text on smaller screens */
+    }
+  }
   
   
