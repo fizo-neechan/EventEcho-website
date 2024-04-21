@@ -17,9 +17,9 @@ function Home() {
             <img src={eventecho} className="tagline" alt=""/>
             <p className="text">
                 A CENTRALIZED PLATFORM<br/>
-                TO FIND CONCERT COMPANIONS<br/>
-                & BUYING/SELLING<br/>
-                TICKETS FOR UCLA STUDENTS<br/>
+                TO FIND CONCERT BUDDIES<br/>
+                & BUY/SELL TICKETS FOR <br/>
+                UCLA STUDENTS!
             </p>
         </div>
     </div>

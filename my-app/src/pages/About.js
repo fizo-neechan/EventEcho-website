@@ -19,9 +19,10 @@ function About() {
         COMING TO THE APPLE STORE IN THE SPRING!<br/>
         <br/>
         IN THE MEAN TIME, FOLLOW US ON INSTAGRAM AND 
-        FILL OUT <a href="https://forms.gle/kcWvPBU47DkwAcFf6">THIS FORM </a>
-        SO THAT WE CAN CONNECT YOU W/ OTHER BRUINS<br/>
+        FILL OUT <a href="https://forms.gle/kcWvPBU47DkwAcFf6">THIS FORM</a> SO 
+        THAT WE CAN CONNECT YOU W/ OTHER BRUINS!<br/>
         </p>
+        
     </div>
 );
 }
