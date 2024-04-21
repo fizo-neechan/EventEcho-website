@@ -9,7 +9,7 @@
     align-items: center;
   }
 
-  .home img {
+  .home .fullscreen-img {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -17,6 +17,14 @@
     height: 90%;
     object-fit: cover;
     z-index: 1;
+  }
+
+  .home .smallscreen-img {
+    display: none;
+  }
+
+  .home .tagline {
+    display:none;
   }
   
   .home .text {
@@ -27,6 +35,39 @@
     font-family: 'Work Sans', sans-serif;
     font-weight: var(--weight-extra-bold);
     z-index: 2;
+  }
+
+  @media only screen and (max-width: 576px) {
+    /* Styles for screens smaller than 600px (e.g., phones) */
+    .home {
+      grid-template-columns: 1fr;
+    }
+  
+    .home .fullscreen-img {
+      display: none;
+    }
+  
+    .home .smallscreen-img {
+      display:block;
+      position: relative;
+      width: 100%;
+      object-fit: cover;
+      z-index: 1;
+      margin-top: -15%;
+    }
+
+    .home .tagline {
+      margin-top: -15%;
+      display:block;
+      margin-left: 25px;
+      margin-bottom: -8%;
+    }
+  
+    .home .text {
+      font-size: 180%;
+      margin-left: 0; /* Reset the margin for text on smaller screens */
+      text-align: left; /* Center the text on smaller screens */
+    }
   }
   
   

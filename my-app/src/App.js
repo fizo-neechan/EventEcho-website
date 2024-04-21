@@ -1,7 +1,8 @@
 import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
-import logo from './images/logo_navbar.png';
+import logo_text from './images/logo_navbar.png';
+import logo from './images/logo_without_background.png';
 import icon_ig from './images/icon_ig.png';
 import icon_app_store from './images/icon_app_store.png';
 import {BrowserRouter, Routes, Route, Link, NavLink} from 'react-router-dom';
@@ -11,6 +12,7 @@ function App() {
     <BrowserRouter>
     <nav className="navbar">
       <div className="logoWrapper">
+        <Link to="/"> <img src={logo_text} alt="logo" className="logo_text"/> </Link>
         <Link to="/"> <img src={logo} alt="logo" className="logo"/> </Link>
       </div>
       
