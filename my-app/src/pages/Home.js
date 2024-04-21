@@ -2,8 +2,7 @@ import '../App.css';
 import './Home.css';
 import back1 from '../images/home_back1.png'
 import back2 from '../images/home_back2.png'
-import phone_back1 from '../images/full_circle_bg.png'
-import phone_back2 from '../images/iphone_fullsize.png'
+import phone_home1 from '../images/phone_home1.png'
 import eventecho from '../images/eventecho.png'
 
 function Home() {
@@ -12,8 +11,7 @@ function Home() {
         <div>
             <img src={back1} className="fullscreen-img" alt=""/>
             <img src={back2} className="fullscreen-img" alt=""/>
-            <img src={phone_back1} className="smallscreen-img" alt=""/>
-            {/*<img src={phone_back2} className="smallscreen-img" alt=""/>*/}
+            <img src={phone_home1} className="smallscreen-img" alt=""/>
         </div> 
         <div>
             <img src={eventecho} className="tagline" alt=""/>
