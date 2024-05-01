@@ -12,11 +12,11 @@
   --color-opaque-grey: #1A1A1A;
 
   /* Font size */
-  /* --font-xlarge: 80px;
+  --font-xlarge: 80px;
   --font-large: 60px;
-  --font-medium: 36px;
+  --font-medium: 32px;
   --font-normal: 24px;
-  --font-small: 12px; */
+  --font-small: 12px;
 
   /* Font weight */
   --weight-extra-bold: 600;
@@ -27,7 +27,10 @@
 
 }
 
-@import url('https://fonts.cdnfonts.com/css/work-sans');
+@font-face {
+    font-family: 'Goldman';
+    src: url('./fonts/Goldman-Regular.ttf') format('truetype');
+}
 
 /* Navbar */
 .navbar {
@@ -38,7 +41,7 @@
   justify-content: space-between;
   background-color: var(--color-black);
   position: sticky;
-  z-index: 2;
+  z-index: 3;
   /* box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 12%); */
 }
 
@@ -47,10 +50,10 @@
   height: 100%;
   display: flex;
   flex-grow: 1;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  margin: 0 2em;
-  font-family: 'Work Sans', sans-serif;
+  margin: 0 1em;
+  font-family: 'Goldman', sans-serif;
 }
 
 .navbarItem {
@@ -59,7 +62,7 @@
   /* border-color: var(--color-opaque-grey); */
   border-radius: 5px;
   padding: 7px;
-
+  margin: 3%;
   color: var(--color-white);
   text-decoration: none;
   font-weight: var(--weight-extra-bold);
@@ -78,8 +81,14 @@
   margin: 0 2em;
 }
   
+.logo_text {
+  height: 40px;
+  display: block;
+}
+
 .logo {
   height: 40px;
+  display: none;
 }
 
 .externalLinkWrapper{
@@ -96,12 +105,26 @@
   margin: 2em;
   position: fixed;
   bottom: 0;
+  z-index: 3;
 }
 
 .externalLinkItems{
   height: 30px;
   width: 30px;
   padding: 5px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .logo_text {
+    display: none;
+    height: 40px;
+  }
+
+  .logo {
+    height: 40px;
+    display: block;
+  }
 }
 
 /* The below came with creating a React app. */
@@ -143,3 +166,4 @@
     transform: rotate(360deg);
   }
 } */
+
