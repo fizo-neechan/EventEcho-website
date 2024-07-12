@@ -1,0 +1,72 @@
+/* Form.css */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white; /* Set label color to white */
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d3d3d3; /* Set input background to light gray */
+  color: black;
+  box-sizing: border-box;
+}
+
+input[type="text"], input[type="email"] {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+input[type="submit"], button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0000ff; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: #0000cc; /* Hover color */
+}
+
+span {
+  color: red;
+  font-size: 12px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-group.full-width {
+  flex-direction: column;
+}
+
+.form-group.full-width input, .form-group.full-width textarea {
+  width: 100%;
+}
+
+.form-group div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
