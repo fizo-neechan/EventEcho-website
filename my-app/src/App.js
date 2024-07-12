@@ -1,7 +1,7 @@
 import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Contact from "./pages/Contact_us";
+import Contact from "./pages/ContactUs";
 import logo_text from "./images/logo_navbar.png";
 import logo from "./images/logo_without_background.png";
 import icon_ig from "./images/icon_ig.png";
@@ -32,7 +32,7 @@ function App() {
             {" "}
             ABOUT{" "}
           </NavLink>
-          <NavLink to="/contact_us" className="navbarItem">
+          <NavLink to="/ContactUs" className="navbarItem">
             {" "}
             CONTACT US{" "}
           </NavLink>
@@ -67,7 +67,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact_us" element={<Contact />} />
+        <Route path="/ContactUs" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

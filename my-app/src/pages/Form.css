@@ -8,9 +8,11 @@ form {
 }
 
 label {
-  margin-bottom: 5px;
+  
   font-weight: bold;
-  color: white; /* Set label color to white */
+  color: white; 
+ font-family: 'Goldman', sans-serif;
+  font-weight: var(--weight-extra-bold);
 }
 
 input, textarea {
@@ -18,13 +20,14 @@ input, textarea {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #d3d3d3; /* Set input background to light gray */
+  background-color: #d3d3d3; 
   color: black;
   box-sizing: border-box;
+
 }
 
 input[type="text"], input[type="email"] {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 textarea {
@@ -54,7 +57,7 @@ span {
 .form-group {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 0px;
 }
 
 .form-group.full-width {
@@ -65,8 +68,3 @@ span {
   width: 100%;
 }
 
-.form-group div {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
