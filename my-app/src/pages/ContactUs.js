@@ -11,12 +11,14 @@ function ContactUs() {
       <img src={about_back1} alt="Background" className="fullscreen-img" />
       <img src={phone_about1} alt="Phone" className="smallscreen-img" />
      
-      <div className="form">
-        <div className="contact-header">
-          <p>DON'T HESITATE TO CONTACT US IF YOU HAVE ANY QUESTIONS:</p>
-          <p>EMAIL US @ayse.ucis@gmail.com</p>
+      <div className="glass-morphism form-padding">
+        <div className="form">
+          <div className="contact-header">
+            <p>DON'T HESITATE TO CONTACT US IF YOU HAVE ANY QUESTIONS:</p>
+            <p>EMAIL US @ ayse.ucis@gmail.com</p>
+          </div>
+          <Form />
         </div>
-        <Form />
       </div>
     </div>
   );
