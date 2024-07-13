@@ -1,2 +1,2 @@
-# EventEcho
-Web application for EventEcho.
+# AYSE
+Web application for AYSE.
