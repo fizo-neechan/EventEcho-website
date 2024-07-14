@@ -14,8 +14,8 @@ function ContactUs() {
       <div className="glass-morphism form-padding">
         <div className="form">
           <div className="contact-header">
-            <p>DON'T HESITATE TO CONTACT US IF YOU HAVE ANY QUESTIONS:</p>
-            <p>EMAIL US @ ayse.ucis@gmail.com</p>
+            <p>Don't hesitate to contact us if you have any questions:</p>
+            <p>Email us @ ayse.ucla@gmail.com</p>
           </div>
           <Form />
         </div>

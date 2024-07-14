@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
+import ClipLoader from "react-spinners/ClipLoader"; // Import the spinner
 import "./Form.css";
 
 function Form() {
@@ -18,6 +19,7 @@ function Form() {
     setIsSubmitting(true);
 
     try {
+      
       const response = await axios.post(
         "https://us-central1-concert-connect-4fcf2.cloudfunctions.net/contactus",
         data,
@@ -83,7 +85,7 @@ function Form() {
         </div>
 
         <button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? "Sending..." : "Submit"}
+          {isSubmitting ? <ClipLoader size={20} color={"#fff"} /> : "Submit"}
         </button>
       </form>
     </div>

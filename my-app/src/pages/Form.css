@@ -8,10 +8,9 @@ form {
 }
 
 label {
-  
   font-weight: bold;
-  color: white; 
- font-family: 'Goldman', sans-serif;
+  color: white;
+  font-family: 'Goldman', sans-serif;
   font-weight: var(--weight-extra-bold);
 }
 
@@ -23,7 +22,7 @@ input, textarea {
   background-color: #d3d3d3; 
   color: black;
   box-sizing: border-box;
-
+  font-family: 'Goldman', sans-serif; /* Added font-family */
 }
 
 input[type="text"], input[type="email"] {
@@ -36,13 +35,16 @@ textarea {
 }
 
 input[type="submit"], button {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   background-color: #0000ff; /* Button color */
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  height: 40px; /* Fixed height to prevent resizing */
 }
 
 input[type="submit"]:hover, button:hover {
@@ -57,7 +59,7 @@ span {
 .form-group {
   display: flex;
   justify-content: space-between;
-  gap: 0px;
+  gap: 10px; /* Adjusted gap */
 }
 
 .form-group.full-width {
