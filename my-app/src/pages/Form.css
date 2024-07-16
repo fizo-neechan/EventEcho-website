@@ -1,0 +1,88 @@
+/* Form.css */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  color: white;
+  font-family: 'Goldman', sans-serif;
+  font-weight: var(--weight-extra-bold);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d3d3d3; 
+  color: black;
+  box-sizing: border-box;
+  font-family: 'Goldman', sans-serif; /* Added font-family */
+}
+
+input[type="text"], input[type="email"] {
+  margin-bottom: 0px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+input[type="submit"], button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #0000ff; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px; /* Fixed height to prevent resizing */
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: #0000cc; /* Hover color */
+}
+
+span {
+  color: red;
+  font-size: 12px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Adjusted gap */
+}
+
+.form-group.full-width {
+  flex-direction: column;
+}
+
+.form-group.full-width input, .form-group.full-width textarea {
+  width: 100%;
+}
+
+.glass-morphism {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.form-padding {
+  padding: 0 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  margin: auto 0;
+  transform: translateY(-20%);
+}
