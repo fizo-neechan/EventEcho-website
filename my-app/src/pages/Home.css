@@ -1,74 +1,78 @@
 .home {
-    background-color: var(--color-black);
-    color: var(--color-white);
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .fullscreen-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  height: 90%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.home .smallscreen-img {
+  display: none;
+}
+
+.home .tagline {
+  display: none;
+}
+
+.home .text {
+  font-size: var(--font-medium);
+  text-align: left;
+  padding: 20px;
+  margin-left: 120px;
+  font-family: 'Goldman', sans-serif;
+  font-weight: var(--weight-extra-bold);
+  z-index: 2;
+}
+
+@media only screen and (max-width: 576px) {
+  .home {
+    grid-template-columns: 1fr;
+    height: 100vh; 
+    padding: 20px; 
+    box-sizing: border-box; 
   }
 
   .home .fullscreen-img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 70%;
-    height: 90%;
-    object-fit: cover;
-    z-index: 1;
-  }
-
-  .home .smallscreen-img {
     display: none;
   }
 
+  .home .smallscreen-img {
+    display: block;
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    z-index: 1;
+    margin-top: 0;
+  }
+
   .home .tagline {
-    display:none;
+    margin-top: 20px;
+    display: block;
+    margin-left: 0; 
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center; 
+    font-size: 1.5em; 
   }
-  
+
   .home .text {
-    font-size: var(--font-medium);
-    text-align: left;
-    padding: 20px;
-    margin-left: 120px;
-    font-family: 'Goldman', sans-serif;
-    font-weight: var(--weight-extra-bold);
-    z-index: 2;
+    font-size: 1.2em; 
+    margin-left: 0; 
+    text-align: center; 
+    padding: 0; 
+    line-height: 1.2em; 
   }
-
-  @media only screen and (max-width: 576px) {
-    /* Styles for screens smaller than 600px (e.g., phones) */
-    .home {
-      grid-template-columns: 1fr;
-      height: auto;
-    }
-  
-    .home .fullscreen-img {
-      display: none;
-    }
-  
-    .home .smallscreen-img {
-      display:block;
-      position: relative;
-      width: 100%;
-      object-fit: cover;
-      z-index: 1;
-      margin-top: -10%;
-    }
-
-    .home .tagline {
-      margin-top: -5%;
-      display: block;
-      margin-left: 25px;
-      margin-bottom: -5%;
-    }
-  
-    .home .text {
-      font-size: 150%;
-      margin-left: 0; /* Reset the margin for text on smaller screens */
-      text-align: left; /* Left-align the text on smaller screens */
-    }
-  }
-  
-  
+}
