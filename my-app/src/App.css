@@ -131,6 +131,7 @@
   .navbarItem {
     font-size: 0.9rem;
     margin: 2%;
+    white-space: nowrap;
   }
 
   .logo_text {
