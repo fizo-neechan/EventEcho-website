@@ -123,11 +123,21 @@
 }
 
 /* Media query for smaller screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  .navbarMenu {
+    margin: 0 0.5em;
+  }
+
+  .navbarItem {
+    font-size: 0.9rem;
+    margin: 2%;
+  }
+
   .logo_text {
     display: none;
     height: 40px;
   }
+
   .logo_tagline {
     display: none;
     height: 40px;
@@ -137,8 +147,11 @@
     height: 40px;
     display: block;
   }
-}
 
+  .externalLinkWrapper {
+    margin: 1em;
+  }
+}
 /* The below came with creating a React app. */
 /* .App {
   text-align: center;

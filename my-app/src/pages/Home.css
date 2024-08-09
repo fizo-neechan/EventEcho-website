@@ -71,9 +71,12 @@ body, html {
 
   .home .tagline {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: -40px;
     width: 100%;
-    font-size: 1.5em;
+    font-size: 8em;
+    text-align: center;
+    font-family: 'Goldman', sans-serif;
+    font-weight: var(--weight-extra-bold);
   }
 
   .home .text {

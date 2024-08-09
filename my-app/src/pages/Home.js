@@ -18,8 +18,8 @@ function Home() {
         <img src={back2} className="fullscreen-img" alt="" />
         {/* <img src={phone_home1} className="smallscreen-img" alt=""/> */}
       </div>
-      <div>
-        <img src={AYSE} className="tagline" alt="" />
+      <div className="tagline-container">
+        <h1 className="tagline">AYSE </h1>
         <p className="text">
           A CENTRALIZED PLATFORM
           <br />
