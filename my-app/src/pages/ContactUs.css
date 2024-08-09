@@ -2,7 +2,7 @@
 .contact {
   position: relative;
   display: grid;
-  place-item: center;
+  place-items: center;
   justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
@@ -10,7 +10,6 @@
   padding: 20px;
   color: white;
 }
-
 
 /* Contact Header */
 .contact-header {
@@ -35,6 +34,7 @@
   color: white;
   padding-top: 10px;
   margin: 170px 20px 20px;
+  box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 /* Background Images */
@@ -53,9 +53,48 @@
   display: none;
 }
 
+@media (min-width: 769px) and (max-width: 1050px) {
+  .contact {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-header {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .contact-header p {
+    font-size: 1.7em;
+  }
+
+  .form {
+    margin: 0;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .smallscreen-img {
+    display: block;
+    opacity: 0.6;
+    filter: blur(5px);
+  }
+
+  .fullscreen-img {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .contact {
     padding: 20px;
+    justify-content: center;
+    align-items: center;
   }
 
   .contact-header {
@@ -64,14 +103,17 @@
   }
 
   .contact-header p {
-    font-size: 1.25em; /* Adjust font size for responsiveness */
+    font-size: 1.25em;
   }
 
   .form {
     margin: 0;
     padding: 20px;
-    max-width: 90%; /* Reduce max width to fit better on small screens */
+    max-width: 90%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .fullscreen-img {
@@ -80,5 +122,10 @@
 
   .smallscreen-img {
     display: block;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: blur(5px);
+    opacity: 70%;
   }
 }
