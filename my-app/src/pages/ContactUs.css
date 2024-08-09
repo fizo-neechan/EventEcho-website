@@ -1,46 +1,43 @@
-
-
+/* General Contact Page Styles */
 .contact {
   position: relative;
-  display: flex;
+  display: grid;
+  place-item: center;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   min-height: 100vh;
   background-color: black;
   padding: 20px;
   color: white;
 }
 
-.contact-header{
 
-margin-bottom: 50px; 
-margin-top: -150px; 
+/* Contact Header */
+.contact-header {
+  margin-bottom: 50px;
+  margin-top: -150px;
 }
 
-.contact-header p{
-
+.contact-header p {
   font-family: 'Goldman', sans-serif;
   font-weight: var(--weight-extra-bold);
   font-size: 15px;
   color: white;
-
 }
 
+/* Form Container */
 .form {
   z-index: 1;
   position: relative;
   border-radius: 10px;
   max-width: 600px;
   width: 100%;
-  margin: 20px;
   color: white;
   padding-top: 10px;
-  margin-top: 170px;
-
+  margin: 170px 20px 20px;
 }
 
-
-
+/* Background Images */
 .fullscreen-img,
 .smallscreen-img {
   position: absolute;
@@ -57,9 +54,30 @@ margin-top: -150px;
 }
 
 @media (max-width: 768px) {
+  .contact {
+    padding: 20px;
+  }
+
+  .contact-header {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .contact-header p {
+    font-size: 1.25em; /* Adjust font size for responsiveness */
+  }
+
+  .form {
+    margin: 0;
+    padding: 20px;
+    max-width: 90%; /* Reduce max width to fit better on small screens */
+    box-sizing: border-box;
+  }
+
   .fullscreen-img {
     display: none;
   }
+
   .smallscreen-img {
     display: block;
   }
