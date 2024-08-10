@@ -45,7 +45,7 @@ body, html {
   z-index: 2;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 786px) {
   .home {
     grid-template-columns: 2fr;
     height: 100vh;
@@ -88,5 +88,59 @@ body, html {
     line-height: 1.2em;
     max-width: 100%; /* Ensure text does not overflow */
     word-wrap: break-word; /* Break long words if necessary */
+  }
+}
+
+/* Middle Screen Layout */
+@media only screen and (min-width: 787px) and (max-width: 1050px) {
+  .home {
+    grid-template-columns: 1fr;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 0;
+    position: relative; /* Ensure the text is positioned above the image */
+  }
+
+  .home .fullscreen-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6; /* Set opacity to 60% */
+    filter: blur(5px); /* Apply a blur of 5px */
+    position: absolute; /* Position the image absolutely within the home container */
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .home .tagline,
+  .home .text {
+    position: relative; /* Ensure the text is above the image */
+    z-index: 2;
+    color: var(--color-white); /* Ensure text color stays white */
+    text-align: center;
+  }
+
+  .home .tagline {
+    display: block;
+    margin-bottom: -30px;
+    max-width: 90%;
+    font-size: 8em;
+    font-family: 'Goldman', sans-serif;
+    font-weight: var(--weight-extra-bold);
+    margin-left: 20px;
+  }
+
+  .home .text {
+    font-size: 1.75em;
+    line-height: 1.2em;
+    max-width: 100%; /* Ensure text does not overflow */
+    word-wrap: break-word; /* Break long words if necessary */
+    text-align: center;
+    margin: 20px 0; /* Add vertical margin for spacing */
   }
 }
