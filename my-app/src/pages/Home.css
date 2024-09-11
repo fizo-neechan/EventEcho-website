@@ -1,74 +1,146 @@
+/* Prevent overflow on the entire page */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 .home {
-    background-color: var(--color-black);
-    color: var(--color-white);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent overflow within the home section */
+}
+
+.home .fullscreen-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.home .smallscreen-img {
+  display: none;
+}
+
+.home .tagline {
+  display: none;
+}
+
+.home .text {
+  font-size: var(--font-medium);
+  text-align: left;
+  padding: 20px;
+  margin-left: 120px;
+  font-family: 'Goldman', sans-serif;
+  font-weight: var(--weight-extra-bold);
+  z-index: 2;
+}
+
+@media only screen and (max-width: 786px) {
+  .home {
+    grid-template-columns: 2fr;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
+    padding: 20px;
   }
 
   .home .fullscreen-img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 70%;
-    height: 90%;
-    object-fit: cover;
-    z-index: 1;
-  }
-
-  .home .smallscreen-img {
     display: none;
   }
 
-  .home .tagline {
-    display:none;
+  .home .smallscreen-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+    margin-top: 0;
   }
-  
-  .home .text {
-    font-size: var(--font-medium);
-    text-align: left;
-    padding: 20px;
-    margin-left: 120px;
+
+  .home .tagline {
+    display: block;
+    margin-bottom: -40px;
+    max-width: 90%;
+    font-size: 6.5em;
+    text-align: center;
     font-family: 'Goldman', sans-serif;
     font-weight: var(--weight-extra-bold);
+  }
+
+  .home .text {
+    font-size: 1.2em;
+    margin-left: 0;
+    text-align: center;
+    padding: 0;
+    line-height: 1.2em;
+    max-width: 100%; /* Ensure text does not overflow */
+    word-wrap: break-word; /* Break long words if necessary */
+  }
+}
+
+/* Middle Screen Layout */
+@media only screen and (min-width: 787px) and (max-width: 1050px) {
+  .home {
+    grid-template-columns: 1fr;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 0;
+    position: relative; /* Ensure the text is positioned above the image */
+  }
+
+  .home .fullscreen-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6; /* Set opacity to 60% */
+    filter: blur(5px); /* Apply a blur of 5px */
+    position: absolute; /* Position the image absolutely within the home container */
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .home .tagline,
+  .home .text {
+    position: relative; /* Ensure the text is above the image */
     z-index: 2;
+    color: var(--color-white); /* Ensure text color stays white */
+    text-align: center;
   }
 
-  @media only screen and (max-width: 576px) {
-    /* Styles for screens smaller than 600px (e.g., phones) */
-    .home {
-      grid-template-columns: 1fr;
-      height: auto;
-    }
-  
-    .home .fullscreen-img {
-      display: none;
-    }
-  
-    .home .smallscreen-img {
-      display:block;
-      position: relative;
-      width: 100%;
-      object-fit: cover;
-      z-index: 1;
-      margin-top: -10%;
-    }
-
-    .home .tagline {
-      margin-top: -5%;
-      display: block;
-      margin-left: 25px;
-      margin-bottom: -5%;
-    }
-  
-    .home .text {
-      font-size: 150%;
-      margin-left: 0; /* Reset the margin for text on smaller screens */
-      text-align: left; /* Left-align the text on smaller screens */
-    }
+  .home .tagline {
+    display: block;
+    margin-bottom: -30px;
+    max-width: 90%;
+    font-size: 8em;
+    font-family: 'Goldman', sans-serif;
+    font-weight: var(--weight-extra-bold);
+    margin-left: 20px;
   }
-  
-  
+
+  .home .text {
+    font-size: 1.75em;
+    line-height: 1.2em;
+    max-width: 100%; /* Ensure text does not overflow */
+    word-wrap: break-word; /* Break long words if necessary */
+    text-align: center;
+    margin: 20px 0; /* Add vertical margin for spacing */
+  }
+}

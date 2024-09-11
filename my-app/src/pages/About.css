@@ -1,12 +1,12 @@
 .about {
-    background-color: var(--color-black);
-    color: var(--color-white);
-    height: 100vh;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-  }
+  background-color: var(--color-black);
+  color: var(--color-white);
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
 
 .about .fullscreen-img {
   width: 100%;
@@ -20,7 +20,7 @@
 }
 
 .about .text {
-  position:absolute;
+  position: absolute;
   font-size: var(--font-normal);
   text-align: left;
   padding: 20px;
@@ -31,9 +31,40 @@
   z-index: 2;
 }
 
-@media only screen and (max-width: 576px) {
-  /* Styles for screens smaller than 600px (e.g., phones) */
+@media only screen and (min-width: 787px) and (max-width: 1050px) {
+  .about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
 
+  .about .fullscreen-img{
+    display: none;
+  }
+  .about .smallscreen-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    filter: blur(5px);
+    position: absolute;
+    z-index: 1;
+  }
+
+  .about .text {
+    position: relative;
+    font-size: 2rem;
+    width: 90%;
+    margin-left: 0;
+    color: var(--color-white);
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .about {
     background-color: var(--color-black);
     color: var(--color-white);
@@ -50,17 +81,19 @@
   }
 
   .about .smallscreen-img {
-    display:block;
+    display: block;
     width: 100%;
     object-fit: cover;
     z-index: 1;
+    filter: blur(5px);
+    opacity: 70%;
   }
 
   .about .text {
     position: relative;
-    font-size: 120%;
+    font-size: 1.25rem;
     width: 90%;
-    margin-left: 0; /* Reset the margin for text on smaller screens */
-    text-align: left; /* Center the text on smaller screens */
+    margin-left: 0;
+    text-align: left;
   }
 }
