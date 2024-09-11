@@ -19,8 +19,7 @@ function App() {
           <Link to="/">
             {" "}
             <div>
-              <img src={logo_text} alt="logo" className="logo_text" />{" "}
-              <img src={tagline} alt="logo" className="logo_tagline" />{" "}
+              <img src={logo_text} alt="logo" className="logo_text" /> <img src={tagline} alt="logo" className="logo_tagline" />{" "}
             </div>
           </Link>
           <Link to="/">
@@ -50,38 +49,27 @@ function App() {
           {" "}
           <Link to="https://www.instagram.com/eventechoucla">
             {" "}
-            <img
-              src={icon_ig}
-              alt="Instagram logo"
-              className="externalLinkItems"
-            />{" "}
+            <img src={icon_ig} alt="Instagram logo" className="externalLinkItems" />{" "}
           </Link>{" "}
         </div>
         <div>
           {" "}
           <Link to="https://www.instagram.com/eventechoucla">
             {" "}
-            <img
-              src={icon_app_store}
-              alt="App Store logo"
-              className="externalLinkItems"
-            />{" "}
+            <img src={icon_app_store} alt="App Store logo" className="externalLinkItems" />{" "}
           </Link>{" "}
         </div>
         <div>
           {" "}
           <Link to="https://www.instagram.com/eventechoucla">
             {" "}
-            <img
-              src={icon_google_play}
-              alt="App Store logo"
-              className="externalLinkItems"
-            />{" "}
+            <img src={icon_google_play} alt="App Store logo" className="externalLinkItems" />{" "}
           </Link>{" "}
         </div>
       </div>
 
       <Routes>
+        {/* NO REMOVE THIS COMMENT */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/ContactUs" element={<Contact />} />
