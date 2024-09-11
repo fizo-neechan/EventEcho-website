@@ -10,6 +10,7 @@ import icon_app_store from "./images/icon_app_store.png";
 import icon_google_play from "./images/google-play.png";
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 function App() {
   return (
@@ -40,6 +41,10 @@ function App() {
           <NavLink to="/Privacy" className="navbarItem">
             {" "}
             PRIVACY{" "}
+          </NavLink>
+          <NavLink to="/Terms" className="navbarItem">
+            {" "}
+            TERMS & CONDITIONS{" "}
           </NavLink>
           <NavLink to="/ContactUs" className="navbarItem">
             {" "}
@@ -78,6 +83,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/ContactUs" element={<Contact />} />
         <Route path="/Privacy" element={<Privacy />} />
+        <Route path="/Terms" element={<Terms />} />
       </Routes>
     </BrowserRouter>
   );
