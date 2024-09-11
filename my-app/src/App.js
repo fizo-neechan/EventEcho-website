@@ -9,6 +9,7 @@ import icon_ig from "./images/icon_ig.png";
 import icon_app_store from "./images/icon_app_store.png";
 import icon_google_play from "./images/google-play.png";
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
+import Privacy from "./pages/Privacy";
 
 function App() {
   return (
@@ -84,6 +85,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/ContactUs" element={<Contact />} />
+        <Route path="/Privacy" element={<Privacy />} />
       </Routes>
     </BrowserRouter>
   );
