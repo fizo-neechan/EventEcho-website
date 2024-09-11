@@ -37,6 +37,10 @@ function App() {
             {" "}
             ABOUT{" "}
           </NavLink>
+          <NavLink to="/Privacy" className="navbarItem">
+            {" "}
+            PRIVACY{" "}
+          </NavLink>
           <NavLink to="/ContactUs" className="navbarItem">
             {" "}
             CONTACT US{" "}
